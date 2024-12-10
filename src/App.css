@@ -5,43 +5,58 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 #navbar {
   padding: 5px;
   margin: 5px;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: inherit;
+  font-weight: 500;
+  border: white 1px solid;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 10px;
+  background-color: #787ee7;
+}
+
+#navbar a:hover {
+  color: #535bf2;
+}
+
+.playerCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.playerCardAll {
+  display: flex;
+  flex-direction: column;
+  border: #61dafbaa solid 1px;
+  background-color: rgb(46, 50, 172);
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
+  width: 300px;
+}
+
+.playerCardAll .title {
+  font-size: 20px;
+}
+.playerCardAll .breed {
+  font-size: 15px;
+}
+
+.playerCardAll li {
+  list-style-type: none;
+}
+
+.playerCardAll img {
+  height: auto;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }

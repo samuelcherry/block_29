@@ -1,7 +1,12 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  return <div>NavBar</div>;
+  return (
+    <div id="navbar">
+      <Link to="/">All Players </Link>
+      <Link to="/newPlayerForm">New Player Form</Link>
+    </div>
+  );
 };
 
 export default NavBar;
